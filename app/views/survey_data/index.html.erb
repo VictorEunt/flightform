@@ -1,0 +1,29 @@
+<h1>Listing survey_data</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Session</th>
+      <th>Question</th>
+      <th>Answer</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @survey_data.each do |survey_datum| %>
+      <tr>
+        <td><%= survey_datum.session %></td>
+        <td><%= survey_datum.question %></td>
+        <td><%= survey_datum.answer %></td>
+        <td><%= link_to 'Show', survey_datum %></td>
+        <td><%= link_to 'Edit', edit_survey_datum_path(survey_datum) %></td>
+        <td><%= link_to 'Destroy', survey_datum, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Survey datum', new_survey_datum_path %>

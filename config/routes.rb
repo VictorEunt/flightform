@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :survey_data
+
   devise_for :users
   root 'pages#home'
 
