@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  resources :survey_data
+  resources :flights
 
-  devise_for :users
+  
   root 'pages#home'
 
   # The priority is based upon order of creation: first created -> highest priority.

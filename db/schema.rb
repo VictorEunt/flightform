@@ -11,12 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150819221111) do
+ActiveRecord::Schema.define(version: 20150820080654) do
 
-  create_table "survey_data", force: true do |t|
-    t.string   "session"
-    t.integer  "question"
-    t.string   "answer"
+  create_table "flights", force: true do |t|
+    t.text     "one"
+    t.text     "two"
+    t.text     "three"
+    t.text     "four"
+    t.text     "five"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

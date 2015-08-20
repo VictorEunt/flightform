@@ -1,0 +1,32 @@
+<h1>Listing flights</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Fave Social Site?</th>
+      <th>Tweet or Insta?</th>
+      <th>You Pin?</th>
+      <th>On Mobile?</th>
+      <th>Any Comment?</th>
+      <th colspan="6"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @flights.each do |flight| %>
+      <tr>
+        <td><%= flight %></td>
+        <td><%= flight.one %></td>
+        <td><%= flight.two %></td>
+        <td><%= flight.three %></td>
+        <td><%= flight.four %></td>
+        <td><%= flight.five %></td>
+
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
