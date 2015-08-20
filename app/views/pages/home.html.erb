@@ -13,6 +13,7 @@
 			</header>
 			<section>
 				<form accept-charset="UTF-8" action="../flights" method="post" id="theForm" class="simform">
+          <input name="utf8" type="hidden" value="&#x2713;" />
           <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
 					<div class="simform-inner">
 						<ol class="questions">
@@ -66,6 +67,7 @@
 					classie.addClass( theForm.querySelector( '.simform-inner' ), 'hide' );
 					
           form.submit()
+
           /*
 					or
 					AJAX request (maybe show loading indicator while we don't have an answer..)
